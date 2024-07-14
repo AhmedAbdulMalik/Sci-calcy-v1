@@ -21,6 +21,9 @@ main ()
     {
     printf ("Enter 2 numbers for the operations\n");
     scanf ("%d\n%d", &a, &b);
+       if(a==b==NULL)
+        { printf("lol don't put that"); }
+       else
     printf ("Enter any operator of the following\n'+'\n'-'\n'*'\n'/'\n");
     scanf ("%s", &opr);
 
