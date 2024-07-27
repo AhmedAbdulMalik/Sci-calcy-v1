@@ -233,4 +233,4 @@ main ()
   printf("Thx for using this small & insignficant progrma");
   //why are you reading this here?
 return 0;  }
-//you may not know but I made this with my friend ayaan, so that we could convice our college faculty to permit the creation of coding club, remmber these aren't just codes but rather expreiences that lead to these creations and that's enough lore for this program.
+//bye
