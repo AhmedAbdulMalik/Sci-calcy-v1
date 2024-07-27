@@ -5,23 +5,31 @@ int
 main ()
 {
   char opr;
-  int m,q;
-  float a, b, c;
-  int n, choice;
-  int matrix1[n][n], matrix2[n][n], result[n][n];
-  float x, y, z;
-  start: //gonna come back here
-  printf ("Welcome to scientific calculator\n");
+            int m,q;
+                    float a, b, c;
+                                  int n, choice;
+                                                int matrix1[n][n], matrix2[n][n], result[n][n];
+                                                                                                float x, y, z;
+int add(a,b);
+int sub(a,b);
+int multi(a,b);
+float div(a,b);
+int addMatrix(int matrix1[i][j],int matrix2[i][j]);
+int subMatrix(int matrix1[i][j], int matrix2[i][j]);
 
+
+                                                                              //gonna come back here
+  printf ("Welcome to scientific calculator\n");
+ start:
   printf ("chose your mode\n 1.Simple calculatin \n2.Matrix operations\n 3.Polynomial equations(only x^2)\n");
   scanf ("%d", &m);
   switch (m)
   {
-  case 1: ///simple and beautiful just like my pc;)  
+  case 1:                                                                      ///simple and beautiful just like my pc;)
     {
     printf ("Enter 2 numbers for the operations\n");
     scanf ("%d\n%d", &a, &b);
-       if(a==b==NULL)
+       if(a==0||b==0)
         { printf("lol don't put that"); }
        else
     printf ("Enter any operator of the following\n'+'\n'-'\n'*'\n'/'\n");
@@ -30,107 +38,79 @@ main ()
     switch (opr)
       {
       case '+':
-      c = a + b;
-      printf ("adding 2 numbers is %d", c);
+         add(a,b);
       break;
-      case '-':
-      c = a - b;
-      printf ("subtracting 2 numbers is %d", c);
-      break;
-      case '*':
-      c = a * b;
-      printf ("multiplying2 numbers is %d", c);
-      break;
-      case '/':
-      c = a / b;
-      printf ("dividing2 numbers is %d", c);
-      break;
-      default:
-      printf ("plz  enter you operation or members");
-        } printf ("do you countine press 1 and 2 to exit");
-      scanf ("%d",&q);
-      if(q<=1);
-      goto start; 
-      break;  }
-    
-  case 2: //matrix^_^
+                    case '-':
+                    sub(a,b);
+                    break;
+                            case '*':
+                            multi(a,b);
+                            break;
+                                        case '/':
+                                        div(a,b);
+                                        break;
+                                                 default:
+                                               {  printf ("plz  enter your operation"); }
+                                                printf ("do you continue press '1' and '2' to exit");
+                                                 scanf ("%d",&q);
+                                                 if(q<=1);
+                                                   goto start;
+                                                 break;  }
+
+  case 2:                                                      //matrix^_^
     {
     printf ("Welcome to matrix mode\n");
     printf ("Enter the size of the matrices (nxn): ");
     scanf ("%d", &n);
-// scaning elements for matrix 1
+                                                               // scaning elements for matrix 1
     printf ("Enter elements of matrix 1:\n");
     for (int i = 0; i < n; i++)
       {
-      for (int j = 0; j < n; j++)
-        {
-        scanf ("%d", &matrix1[i][j]);
-        }
+             for (int j = 0; j < n; j++)
+                   {
+                           scanf ("%d", &matrix1[i][j]);
+                   }
       }
 
-    // again scaning elements for matrix 2
-    printf ("Enter elements of matrix 2:\n");
-    for (int i = 0; i < n; i++)
-      {
-      for (int j = 0; j < n; j++)
-        {
-        scanf ("%d", &matrix2[i][j]);
-        }
-      }
+                                                                // again scaning elements for matrix 2
+                                    printf ("Enter elements of matrix 2:\n");
+                                         for (int i = 0; i < n; i++)
+                                          {
+                                              for (int j = 0; j < n; j++)
+                                               {
+                                                 scanf ("%d", &matrix2[i][j]);
+                                               }
+                                          }
 
-    {
+
       printf ("\nSelect an operation:\n");
       printf ("1. Addition\n");
+
       printf ("2. Subtraction\n");
+
       printf ("3. Multiplication\n");
+
       printf ("4. Transpose of matrix 1\n");
+
       printf ("5. Transpose of matrix 2\n");
+
       printf ("6. Exit\n");
-      printf ("Enter your choice: ");
-      scanf ("%d", &choice);
+
+                printf ("Enter your choice: ");
+
+                scanf ("%d", &choice);
 
       switch (choice)
       {
       case 1:
-        // lets add matrices bc we can
-        for (int i = 0; i < n; i++)
-        {
-          for (int j = 0; j < n; j++)
-          {
-            result[i][j] = matrix1[i][j] + matrix2[i][j];
-          }
-        }
-        printf ("The sum of the matrices:\n");
-        for (int i = 0; i < n; i++)
-        {
-          for (int j = 0; j < n; j++)
-          {
-            printf ("%d ", result[i][j]);
-          }
-          printf ("\n");
-        }
+               addMatrix(int matrix1[i][j],int matrix2[i][j]);
         break;
       case 2:
-        // matrices:)
-        for (int i = 0; i < n; i++)
-        {
-          for (int j = 0; j < n; j++)
-          {
-            result[i][j] = matrix1[i][j] - matrix2[i][j];
-          }
-        }
-        printf ("The difference of the matrices:\n");
-        for (int i = 0; i < n; i++)
-        {
-          for (int j = 0; j < n; j++)
-          {
-            printf ("%d ", result[i][j]);
-          }
-          printf ("\n");
-        }
+        // sub matrices:)
+               subMatrix (int matrix1[i][j], int matrix2[i][j]);
         break;
       case 3:
-        // multiply matrices bc we can 
+        // multiply matrices bc we can
         if (n != matrix2[0][0])
         {				//  if-else for multiplication actually imp part
           printf
@@ -182,7 +162,7 @@ main ()
         scanf ("%d",&q);
         if(q<=1);
         goto start;
-        break; 
+        break;
       }
 
       return 0;
@@ -233,4 +213,68 @@ main ()
   printf("Thx for using this small & insignficant progrma");
   //why are you reading this here?
 return 0;  }
-//bye
+
+int add(a,b)
+{
+  c = a + b;
+      printf("adding 2 numbers is %d", c);
+}
+
+int sub(a,b)
+{
+    c = a - b;
+         printf("subtracting 2 numbers is %d",c);
+}
+
+int multi(a,b)
+{
+    c = a * b;
+      printf ("multiplying2 numbers is %d", c);
+}
+
+float div(a,b)
+{
+    c = a / b;
+      printf ("dividing2 numbers is %d", c);
+}
+
+ int addMatrix(int matrix1[i][j], int matrix2[i][j])
+{
+    // lets add matrices bc we can
+        for (int i = 0; i < n; i++)
+        {
+          for (int j = 0; j < n; j++)
+          {
+            result[i][j] = matrix1[i][j] + matrix2[i][j];
+          }
+        }
+        printf ("The sum of the matrices:\n");
+        for (int i = 0; i < n; i++)
+        {
+          for (int j = 0; j < n; j++)
+          {
+            printf ("%d ", result[i][j]);
+          }
+          printf ("\n");
+        }
+}
+
+ int subMatrix (int matrix1[i][j], int matrix2[i][j])
+{
+    for (int i = 0; i < n; i++)
+        {
+          for (int j = 0; j < n; j++)
+          {
+            result[i][j] = matrix1[i][j] - matrix2[i][j];
+          }
+        }
+        printf ("The difference of the matrices:\n");
+        for (int i = 0; i < n; i++)
+        {
+          for (int j = 0; j < n; j++)
+          {
+            printf ("%d ", result[i][j]);
+          }
+          printf ("\n");
+        }
+}
