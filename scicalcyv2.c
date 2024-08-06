@@ -322,7 +322,7 @@ return 0;  }
                                                                                         int polyEquation(x,y,z)
 
                                                                                       {
-     // Calculing discriminant(YES I WILL UsE calculating again and again muhaha!)
+      // Calculing discriminant(YES I WILL UsE calculating again and again muhaha!)
 
                                                                                         float discriminant = y * y - 4 * x * z;
 

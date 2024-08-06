@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+ int add(int *d,int *e);
+
+		int main(void)
+  	{
+	int a=0;
+	int b=0;
+
+	int* x =&a;
+	int* y =&b;
+
+
+
+	printf("Enter 2 numbers\n");
+	scanf("%d",&a);
+	scanf("%d",&b);
+   printf("wait...");
+		add(x,y);
+         printf("\nthank you");
+
+	}
+		int add(int* d,int* e)
+		{
+		printf("Press 1 to see result ");
+		int c=*d+*e;
+		printf("\n%d",c);
+		return c;
+		}
