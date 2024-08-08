@@ -22,7 +22,7 @@
 	}
 		int add(int* d,int* e)
 		{
-		printf("Press 1 to see result ");
+		printf("Processing...");
 		int c=*d+*e;
 		printf("\n%d",c);
 		return c;
