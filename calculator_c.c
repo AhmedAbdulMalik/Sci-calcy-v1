@@ -2,7 +2,11 @@
 
  int add(int *d,int *e);
  int sub(int *d,int *e);
-
+ int mult(int *d,int *e);
+ float div(int *d,int *e);
+	
+		
+		
 		int main(void)
   	{
 	int a=0;
@@ -38,3 +42,23 @@
 		return c;
 
 		 }
+
+		 int mult(int *d,int *e)
+		 {
+            printf("Processing...");
+		int c= *d * *e;
+		printf("\n%d",c);
+		return c;
+		 }
+		 
+		 float div(int *d,int *e)
+		 {
+          printf("Processing...");
+		float c= *d / *e;
+		printf("\n%d",c);
+		return c;
+
+		 }
+
+		 
+
