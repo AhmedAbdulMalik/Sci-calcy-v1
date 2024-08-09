@@ -1,6 +1,7 @@
 #include<stdio.h>
 
  int add(int *d,int *e);
+ int sub(int *d,int *e);
 
 		int main(void)
   	{
@@ -17,13 +18,23 @@
 	scanf("%d",&b);
    printf("wait...");
 		add(x,y);
+		int result = add(x,y);
          printf("\nthank you");
 
 	}
 		int add(int* d,int* e)
 		{
 		printf("Processing...");
-		int c=*d+*e;
+		int c= *d + *e;
 		printf("\n%d",c);
 		return c;
 		}
+
+		 int sub(int *d,int *e)
+		 {
+          printf("Processing...");
+		int c= *d - *e;
+		printf("\n%d",c);
+		return c;
+
+		 }
