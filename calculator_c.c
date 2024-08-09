@@ -16,7 +16,7 @@
 	int* y =&b;
 
 
-
+    printf("Welcome to the Scientific Calculator! To get started->\n");
 	printf("Enter 2 numbers\n");
 	scanf("%d",&a);
 	scanf("%d",&b);
@@ -50,7 +50,7 @@
 		printf("\n%d",c);
 		return c;
 		 }
-		 
+
 		 float div(int *d,int *e)
 		 {
           printf("Processing...");
