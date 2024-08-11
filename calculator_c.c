@@ -24,10 +24,10 @@
     printf("Enter the letter to choose your Operations");
 	
 	printf("a.Addition");
-	printf("b.Subtraction");
-	printf("c.Multiplication");
-	printf("d.Division");
-	scanf("%c",&o);
+ 	printf("b.Subtraction");
+	  printf("c.Multiplication");
+   	printf("d.Division");
+    	scanf("%c",&o);
 
 	switch(o)
 	{
@@ -74,9 +74,9 @@
 		int add(int* d,int* e)
 		{
 		printf("Processing...");
-	 int c= *d + *e;
-		printf("\n%d",c);
-		return c;
+	  int c= *d + *e;
+ 	  	printf("\n%d",c);
+    		return c;
 		}
 
 		 int sub(int *d,int *e)
