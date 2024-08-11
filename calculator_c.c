@@ -10,10 +10,9 @@
 		int main(void)
   	{
 	int a=0;
-	int b=0;
-
-	int* x =&a;
-	int* y =&b;
+	 int b=0;
+  	int* x =&a;
+   	int* y =&b;
 
 	char o;
 
