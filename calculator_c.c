@@ -83,8 +83,8 @@
 		 {
           printf("Processing...");
 		int c= *d - *e;
-		printf("\n%d",c);
-		return c;
+	 	printf("\n%d",c);
+	  	return c;
 
 		 }
 
@@ -92,16 +92,16 @@
 		 {
             printf("Processing...");
 		int c= *d * *e;
-		printf("\n%d",c);
-		return c;
+ 		printf("\n%d",c);
+  		return c;
 		 }
 
 		 float div(int *d,int *e)
 		 {
           printf("Processing...");
 		float c= *d / *e;
-		printf("\n%d",c);
-		return c;
+ 		printf("\n%d",c);
+  		return c;
 
 		 }
 
