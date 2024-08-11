@@ -18,10 +18,10 @@
 
 
     printf("Welcome to the Scientific Calculator! To get started->\n");
-	printf("Enter 2 numbers\n");
-	scanf("%d",&a);
-	scanf("%d",&b);
-   printf("Enter the letter to choose your Operations");
+  	printf("Enter 2 numbers\n");
+  	scanf("%d",&a);
+   	scanf("%d",&b);
+    printf("Enter the letter to choose your Operations");
 	
 	printf("a.Addition");
 	printf("b.Subtraction");
