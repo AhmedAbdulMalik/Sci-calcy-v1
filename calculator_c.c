@@ -17,7 +17,7 @@
 	char o;
 
 
-    printf("Welcome to the Scientific Calculator! To get started->\n");
+ printf("Welcome to the Scientific Calculator! To get started->\n");
   	printf("Enter 2 numbers\n");
   	scanf("%d",&a);
    	scanf("%d",&b);
@@ -38,6 +38,7 @@
          						printf("\nthank you");
 								break;
             				}
+
 								 					case 'B' :
 													case 'b' :
          															{	sub(x,y);
@@ -45,6 +46,7 @@
          																printf("\nthank you");
 																		break;
             														}
+
 													case 'C' :
 													case 'c' :
          															{	mult(x,y);
@@ -52,6 +54,7 @@
          																printf("\nthank you");
 																		break;
 																	}
+
            case 'D' :
 		   case 'd' :
          					{	div(x,y);
