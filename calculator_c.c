@@ -1,10 +1,10 @@
 #include<stdio.h>
 
  int add(int *d,int *e);
- int sub(int *d,int *e);
- int mult(int *d,int *e);
- float div(int *d,int *e);
-	
+  int sub(int *d,int *e);
+   int mult(int *d,int *e);
+    float div(int *d,int *e);
+	 
 		
 		
 		int main(void)
@@ -75,7 +75,7 @@
 		int add(int* d,int* e)
 		{
 		printf("Processing...");
-		int c= *d + *e;
+	 int c= *d + *e;
 		printf("\n%d",c);
 		return c;
 		}
