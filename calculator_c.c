@@ -50,17 +50,17 @@
 					                                            case 'C' :
 										    case 'c' :
          					 					    {	   mult(x,y);
-									                  	int result = mult(x,y);
-         																printf("\nthank you");
-																		break;
-																	}
+									                  	    int result = mult(x,y);
+         									    		     printf("\nthank you");
+													break;
+					 										}
 
            case 'D' :
-		   case 'd' :
-         					{	div(x,y);
-								int result = div(x,y);
-         						printf("\nthank you");
-								break;
+	   case 'd' :
+         	  {	div(x,y);
+			 int result = div(x,y);
+        		  printf("\nthank you");
+			   break;
             				} 														
                
 
