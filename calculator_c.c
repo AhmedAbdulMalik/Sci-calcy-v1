@@ -30,7 +30,7 @@
     				scanf("%c",&o);
 
 	switch(o)
-	{
+{
 	case 'A' :
 	case 'a' :
         	{	add(x,y);
@@ -68,19 +68,20 @@
 
 
 
-	}	
+}	
 
 
 
 
 	}
+//functions
 		int add(int* d,int* e)
-		{
-		printf("Processing...");
-	  int c= *d + *e;
- 	  	printf("\n%d",c);
-    		return c;
-		}
+		 {
+			printf("Processing...");
+	     		   int c= *d + *e;
+ 	  			printf("\n%d",c);
+    			           return c;
+						}
 
 		 int sub(int *d,int *e)
 		 {
