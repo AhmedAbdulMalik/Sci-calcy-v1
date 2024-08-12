@@ -52,7 +52,7 @@
          					 					    {	   mult(x,y);
 									                  	    int result = mult(x,y);
          									    		     printf("\nthank you");
-													break;
+												      break;
 					 										}
 
            case 'D' :
