@@ -8,7 +8,8 @@ HI! don't have much to say because it is self-explanatory~~
     Matric Operations (adding,subtracting,multiplying,transposing)
 
     Core idea: 
-    To keep adding new features in the form of functions with a simple switch-case approach for option-choosing, printing different ASCII arts if the result is a certain value ;) and eventually having it all on a G.U.I with pages for 
+  
+  To keep adding new features in the form of functions with a simple switch-case approach for option-choosing, printing different ASCII arts if the result is a certain value ;) and eventually having it all on a G.U.I with pages for 
     Menu, 
     Options, 
     Each Operation, 
