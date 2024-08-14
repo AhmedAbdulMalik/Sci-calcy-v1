@@ -1,9 +1,11 @@
 #include<stdio.h>
+#include<math.h>
 
  int add(int *d,int *e);
   int sub(int *d,int *e);
    int mult(int *d,int *e);
     float div(int *d,int *e);
+     int polyeq(float *d,float*e,float*f);
 	 
 		
 		
@@ -108,6 +110,13 @@
   		return c;
 
 		 }
+
+		 /* int polyeq(float *d,float*e,float*f);
+		 {
+		 float discriminant = y * y - 4 * x * z;
+		 
+		 }
+		 */
 
 		 
 
