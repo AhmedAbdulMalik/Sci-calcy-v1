@@ -5,10 +5,9 @@
   int sub(int *d,int *e);
    int mult(int *d,int *e);
     float div(int *d,int *e);
-     int polyeq(float *d,float*e,float*f);
+     int polyeq(int *d,int *e,int *f);
 	 
-		
-		
+			
 		   int main(void)
   	{
 	 int a=0;
@@ -25,10 +24,11 @@
 		
     printf("Enter the letter to choose your Operations");
 	
-	printf("a.Addition");
+	  printf("a.Addition");
  		printf("b.Subtraction");
 		  printf("c.Multiplication");
    			printf("d.Division");
+			  printf("e.Equation");
     				scanf("%c",&o);
 
 	switch(o)
@@ -49,15 +49,14 @@
 					     			   break;
 									         }
             														
-					                                            case 'C' :
+					                        case 'C' :
 										    case 'c' :
          					 					    {	   mult(x,y);
 									                  	    int result = mult(x,y);
          									    		     printf("\nthank you");
 												      break;
 					 										}
-
-           case 'D' :
+       case 'D' :
 	   case 'd' :
          	  {	div(x,y);
 			 int result = div(x,y);
@@ -65,6 +64,20 @@
 			   break;
             				} 														
                
+	   case 'E' :
+       case 'e' :
+    {   printf("Processing...\n");  
+		 printf("Select the degree of the\n");
+		  printf("Polynomial Equation\n");
+		  		  printf("1.\n");
+
+
+
+							//int polyeq(int *d,int *e,int *f);int result = polyeq( *d,*e, *f);
+        						 			 
+		 printf("\nthank you");
+		 	break;
+            	  								}
 
 
 
@@ -111,12 +124,20 @@
 
 		 }
 
-		 /* int polyeq(float *d,float*e,float*f);
+		   int polyeq(int *d,int *e,int *f)
 		 {
+		 int x = *d;
+		  int y = *e;
+		   int z = *f;
+
+		   printf("Processing...");
+
+
 		 float discriminant = y * y - 4 * x * z;
+
 		 
 		 }
-		 */
+		 
 
 		 
 
