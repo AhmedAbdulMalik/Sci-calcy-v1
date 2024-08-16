@@ -141,7 +141,7 @@
 		  int y; 
 		   int z;
             int w;
-		   printf("Processing...");
+		   printf("Processing...\n");
 
            switch (a)
 		   {
@@ -149,7 +149,13 @@
 			 printf("From aX^2+bX+c=0\n");
 		     printf("Enter 'a' value\n");
 			 scanf("%d",&x);
-			 printf("Enter 'a' value\n"); 
+			 printf("Enter 'a' value\n");
+			 scanf("%d",&y);
+			 printf("Enter 'a' value\n");
+			 scanf("%d",&z);
+
+			 
+			  
 			break;
 		   
 		   //default:
