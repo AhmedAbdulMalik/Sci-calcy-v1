@@ -5,7 +5,7 @@
   int sub(int *d,int *e);
    int mult(int *d,int *e);
     float div(int *d,int *e);
-     int polyeq();
+     int polyeq(a);
 	 
 			
 		   int main(void)
@@ -73,12 +73,12 @@
            printf("Polynomial Equation\n");
 		  		  printf("1.aX^2+bX+c=0\n");
 			    	printf("2.aX^3+bX^2+cX+d=0\n");
-					 scanf("%c",&o);   
+					 scanf("%i",&o);   
 		    } while(o>0 && o<3);
 
 			if(o==1)
         {  /* polyeq();
-		int result = polyeq();*/  }
+		int result = polyeq(o);*/  }
 
 		else if (o==2)
 		{                }
@@ -135,14 +135,30 @@
 
 		 }
 
-		   int polyeq(int *d,int *e,int *f)
+		   int polyeq(a)
 		 {
-		 int x = *d;
-		  int y = *e;
-		   int z = *f;
-
+		 int x;
+		  int y; 
+		   int z;
+            int w;
 		   printf("Processing...");
 
+           switch (a)
+		   {
+		   case '1':
+			 printf("From aX^2+bX+c=0\n");
+		     printf("Enter 'a' value\n");
+			 scanf("%d",&x);
+			 printf("Enter 'a' value\n"); 
+			break;
+		   
+		   //default:
+			//break;
+		   }
+        {   
+
+		
+	    }
 
 		 float discriminant = y * y - 4 * x * z;
 
