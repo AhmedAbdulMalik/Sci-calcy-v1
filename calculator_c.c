@@ -5,7 +5,7 @@
   int sub(int *d,int *e);
    int mult(int *d,int *e);
     float div(int *d,int *e);
-     int polyeq(int *d,int *e,int *f);
+     int polyeq();
 	 
 			
 		   int main(void)
@@ -76,14 +76,15 @@
 					 scanf("%c",&o);   
 		    } while(o>0 && o<3);
 
+			if(o==1)
+        {  /* polyeq();
+		int result = polyeq();*/  }
 
-		  
-			
+		else if (o==2)
+		{                }
 
-
-
-
-		//int polyeq(int *d,int *e,int *f);int result = polyeq( *d,*e, *f);
+        else
+		
         						 			 
 		 printf("\nthank you");
 		 	break;
