@@ -18,9 +18,10 @@
 
 
  printf("Welcome to the Scientific Calculator! To get started->\n");
-  		printf("Enter 2 numbers\n");
+  		do {
+		printf("Enter 2 numbers\n");
  		 	scanf("%d",&a);
-			   	scanf("%d",&b);
+			   	scanf("%d",&b);}while(a>0 && b>0);
 		
     printf("Enter the letter to choose your Operations");
 	
@@ -49,13 +50,13 @@
 					     			   break;
 									         }
             														
-					                        case 'C' :
-										    case 'c' :
-         					 					    {	   mult(x,y);
-									                  	    int result = mult(x,y);
-         									    		     printf("\nthank you");
-												      break;
-					 										}
+   case 'C' :
+   case 'c' :
+    	  {   mult(x,y);
+			    int result = mult(x,y);
+         		    printf("\nthank you");
+				     break;
+					  		}
        case 'D' :
 	   case 'd' :
          	  {	div(x,y);
@@ -68,12 +69,21 @@
        case 'e' :
     {   printf("Processing...\n");  
 		 printf("Select the degree of the\n");
-		  printf("Polynomial Equation\n");
-		  		  printf("1.\n");
+		do {
+           printf("Polynomial Equation\n");
+		  		  printf("1.aX^2+bX+c=0\n");
+			    	printf("2.aX^3+bX^2+cX+d=0\n");
+					 scanf("%c",&o);   
+		    } while(o>0 && o<3);
+
+
+		  
+			
 
 
 
-							//int polyeq(int *d,int *e,int *f);int result = polyeq( *d,*e, *f);
+
+		//int polyeq(int *d,int *e,int *f);int result = polyeq( *d,*e, *f);
         						 			 
 		 printf("\nthank you");
 		 	break;
