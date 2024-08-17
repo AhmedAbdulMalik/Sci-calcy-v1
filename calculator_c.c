@@ -6,6 +6,7 @@
    int mult(int *d,int *e);
     float div(int *d,int *e);
      int polyeq(a);
+	 int menu();
 	 
 			
 		   int main(void)
@@ -72,7 +73,7 @@
 		do {
            printf("Polynomial Equation\n");
 		  		  printf("1.aX^2+bX+c=0\n");
-			    	printf("2.aX^3+bX^2+cX+d=0\n");
+			    	/*printf("2.aX^3+bX^2+cX+d=0\n");*/
 					 scanf("%i",&o);   
 		    } while(o>0 && o<3);
 
