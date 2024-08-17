@@ -135,8 +135,8 @@
 
 		 }
 
-		   int polyeq(a)
-		 {
+ int polyeq(a)
+{
 		 int x;
 		  int y; 
 		   int z;
@@ -174,7 +174,34 @@
    break;
 }
 			  
-			
+	case '2':
+	printf("From aX^2+bX+c=0\n");
+	printf("Enter 'a' value\n");
+
+	 scanf("%d",&x);
+
+	printf("Enter 'b' value\n");
+
+	 scanf("%d",&y);
+
+	printf("Enter 'c' value\n");
+
+	 scanf("%d",&z);
+
+ float discriminant = y * y - 4 * x * z;
+
+ if (discriminant > 0)
+ {
+    float root1 = (-y + sqrt(discriminant)) / (2 * x);
+    float root2 = (-y - sqrt(discriminant)) / (2 * x);
+    printf("Roots are real and distinct: %.2f and %.2f\n", root1, root2);
+            break;
+ }
+	else if (discriminant == 0)
+{  float root = -y / (2 * x);
+   printf("Roots are real and equal: %.2f\n", root);
+   break;
+}		
 		   
  default:
   break;
@@ -183,4 +210,4 @@
 
 		 
 		 //float discriminant = y * y - 4 * x * z;
-		 }
+}
