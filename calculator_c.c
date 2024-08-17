@@ -143,16 +143,21 @@
             int w;
 		   printf("Processing...\n");
 
-           switch (a)
-		   {
-		   case '1':
-		 printf("From aX^2+bX+c=0\n");
-		  printf("Enter 'a' value\n");
-		   scanf("%d",&x);
-			printf("Enter 'b' value\n");
-			 scanf("%d",&y);
-			  printf("Enter 'c' value\n");
-			   scanf("%d",&z);
+ switch (a)
+ {
+   case '1':
+	printf("From aX^2+bX+c=0\n");
+	printf("Enter 'a' value\n");
+
+	 scanf("%d",&x);
+
+	printf("Enter 'b' value\n");
+
+	 scanf("%d",&y);
+
+	printf("Enter 'c' value\n");
+
+	 scanf("%d",&z);
 
  float discriminant = y * y - 4 * x * z;
 
@@ -164,20 +169,17 @@
             break;
  }
 	else if (discriminant == 0)
-			{  float root = -y / (2 * x);
-			 printf("Roots are real and equal: %.2f\n", root);
-			break;
-			}
+{  float root = -y / (2 * x);
+   printf("Roots are real and equal: %.2f\n", root);
+   break;
+}
 			  
 			
 		   
-		   //default:
-			//break;
+ default:
+  break;
 		   }
-        {   
-
-		
-	    }
+        
 
 		 
 		 //float discriminant = y * y - 4 * x * z;
