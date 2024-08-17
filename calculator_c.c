@@ -184,7 +184,7 @@ printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt
 
 
 			  /*CASE 2*/
-	case '2':
+	/*case '2':
 	printf("From aX^2+bX+c=0\n");
 	printf("Enter 'a' value\n");
 
@@ -214,7 +214,7 @@ printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt
 {  float root = -y / (2 * x);
    printf("Roots are real and equal: %.2f\n", root);
    break;
-}		
+}*/		
 		   
  default:
   break;
