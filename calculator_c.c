@@ -77,8 +77,8 @@
 		    } while(o>0 && o<3);
 
 			if(o==1)
-        {  /* polyeq();
-		int result = polyeq(o);*/  }
+        {  polyeq(o);
+		int result = polyeq(o);  }
 
 		else if (o==2)
 		{                }
@@ -144,7 +144,8 @@
 		   printf("Processing...\n");
 
  switch (a)
- {
+ { 
+	        /*CASE 1*/
    case '1':
 	printf("From aX^2+bX+c=0\n");
 	printf("Enter 'a' value\n");
@@ -160,7 +161,7 @@
 	 scanf("%d",&z);
 
  float discriminant = y * y - 4 * x * z;
-
+ /*ROOTS*/
  if (discriminant > 0)
  {
     float root1 = (-y + sqrt(discriminant)) / (2 * x);
@@ -168,12 +169,21 @@
     printf("Roots are real and distinct: %.2f and %.2f\n", root1, root2);
             break;
  }
-	else if (discriminant == 0)
+ else if (discriminant == 0)
 {  float root = -y / (2 * x);
    printf("Roots are real and equal: %.2f\n", root);
    break;
 }
-			  
+/*IMAGINARY ROOTS*/
+ else 
+	{
+		float realPt = -y / (2 * x);
+		float imaginaryPt = sqrt(fabs(discriminant)) / (2 * x);
+printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt, realPt, imaginaryPt);
+	}
+
+
+			  /*CASE 2*/
 	case '2':
 	printf("From aX^2+bX+c=0\n");
 	printf("Enter 'a' value\n");
@@ -187,6 +197,8 @@
 	printf("Enter 'c' value\n");
 
 	 scanf("%d",&z);
+	printf("Enter 'd' value\n");
+	 scanf("%d",&z);
 
  float discriminant = y * y - 4 * x * z;
 
@@ -194,6 +206,7 @@
  {
     float root1 = (-y + sqrt(discriminant)) / (2 * x);
     float root2 = (-y - sqrt(discriminant)) / (2 * x);
+	float root3 = (-y - sqrt(discriminant)) / (2 * x);
     printf("Roots are real and distinct: %.2f and %.2f\n", root1, root2);
             break;
  }
