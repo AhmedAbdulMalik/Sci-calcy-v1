@@ -112,6 +112,7 @@
 
 		 int sub(int *d,int *e)
 		 {
+			 
           printf("Processing...");
 		int c= *d - *e;
 	 	printf("\n%d",c);
@@ -121,6 +122,7 @@
 
 		 int mult(int *d,int *e)
 		 {
+			 
             printf("Processing...");
 		int c= *d * *e;
  		printf("\n%d",c);
@@ -129,6 +131,7 @@
 
 		 float div(int *d,int *e)
 		 {
+			 
           printf("Processing...");
 		float c= *d / *e;
  		printf("\n%d",c);
@@ -148,6 +151,7 @@
  { 
 	        /*CASE 1*/
    case '1':
+	   
 	printf("From aX^2+bX+c=0\n");
 	printf("Enter 'a' value\n");
 
@@ -165,13 +169,15 @@
  /*ROOTS*/
  if (discriminant > 0)
  {
+	 
     float root1 = (-y + sqrt(discriminant)) / (2 * x);
     float root2 = (-y - sqrt(discriminant)) / (2 * x);
     printf("Roots are real and distinct: %.2f and %.2f\n", root1, root2);
             break;
  }
  else if (discriminant == 0)
-{  float root = -y / (2 * x);
+{
+   float root = -y / (2 * x);
    printf("Roots are real and equal: %.2f\n", root);
    break;
 }
@@ -205,6 +211,7 @@ printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt
 
  if (discriminant > 0)
  {
+ 
     float root1 = (-y + sqrt(discriminant)) / (2 * x);
     float root2 = (-y - sqrt(discriminant)) / (2 * x);
 	float root3 = (-y - sqrt(discriminant)) / (2 * x);
@@ -212,7 +219,8 @@ printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt
             break;
  }
 	else if (discriminant == 0)
-{  float root = -y / (2 * x);
+{  
+   float root = -y / (2 * x);
    printf("Roots are real and equal: %.2f\n", root);
    break;
 }*/		
