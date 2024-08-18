@@ -37,7 +37,7 @@
 {
 	case 'A' :
 	case 'a' :
-        	{	add(x,y);
+        	{  add(x,y);
 			 int result = add(x,y);
          		  printf("\nthank you");
 			   break;
@@ -45,11 +45,11 @@
 
 	case 'B' :
 	case 'b' :
-         	{	sub(x,y);
+         	{ sub(x,y);
 			 int result = sub(x,y);
          		  printf("\nthank you");
 			   break;
-									         }
+					     }
             														
    case 'C' :
    case 'c' :
