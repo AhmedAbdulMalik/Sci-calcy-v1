@@ -46,7 +46,7 @@
 	case 'B' :
 	case 'b' :
          	{	sub(x,y);
-						 		 int result = sub(x,y);
+			 int result = sub(x,y);
          			  				  printf("\nthank you");
 					     			   break;
 									         }
