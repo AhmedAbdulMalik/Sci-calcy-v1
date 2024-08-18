@@ -48,7 +48,7 @@
          	{	sub(x,y);
 			 int result = sub(x,y);
          		  printf("\nthank you");
-					     			   break;
+			   break;
 									         }
             														
    case 'C' :
