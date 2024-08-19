@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<math.h>
+   #include<stdio.h>
+   #include<math.h>
 
  int add(int *d,int *e);
   int sub(int *d,int *e);
