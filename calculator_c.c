@@ -110,7 +110,7 @@
     			           return c;
 						}
 
-		 int sub(int *d,int *e)
+ 		 int sub(int *d,int *e)
 		 {
 			 
           printf("Processing...");
@@ -120,7 +120,7 @@
 
 		 }
 
-		 int mult(int *d,int *e)
+	 	 int mult(int *d,int *e)
 		 {
 			 
             printf("Processing...");
