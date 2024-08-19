@@ -201,7 +201,7 @@ printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt
 
 	 scanf("%d",&y);
 
-	printf("Enter 'c' value\n");
+	  printf("Enter 'c' value\n");
 
 	 scanf("%d",&z);
 	printf("Enter 'd' value\n");
