@@ -139,7 +139,7 @@
 
 		 }
 
- int polyeq(a)
+   int polyeq(a)
 {
 		 int x;
 		  int y; 
