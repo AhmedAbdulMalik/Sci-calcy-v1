@@ -204,7 +204,7 @@ printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt
 	  printf("Enter 'c' value\n");
 
 	 scanf("%d",&z);
-	printf("Enter 'd' value\n");
+ 	printf("Enter 'd' value\n");
 	 scanf("%d",&z);
 
  float discriminant = y * y - 4 * x * z;
