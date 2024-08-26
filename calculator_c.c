@@ -231,5 +231,5 @@ printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt
         
 
 		 
-		 //float discriminant = y * y - 4 * x * z;
+	 	 //float discriminant = y * y - 4 * x * z;
 }
