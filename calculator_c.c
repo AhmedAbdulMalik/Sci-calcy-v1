@@ -215,7 +215,7 @@ printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPt, imaginaryPt
     float root1 = (-y + sqrt(discriminant)) / (2 * x);
     float root2 = (-y - sqrt(discriminant)) / (2 * x);
 	float root3 = (-y - sqrt(discriminant)) / (2 * x);
-    printf("Roots are real and distinct: %.2f and %.2f\n", root1, root2);
+     printf("Roots are real and distinct: %.2f and %.2f\n", root1, root2);
             break;
  }
 	else if (discriminant == 0)
