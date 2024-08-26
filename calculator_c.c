@@ -124,7 +124,7 @@
 		 {
 			 
             printf("Processing...");
-		int c= *d * *e;
+	 	int c= *d * *e;
  		printf("\n%d",c);
   		return c;
 		 }
