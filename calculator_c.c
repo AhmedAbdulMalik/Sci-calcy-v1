@@ -18,7 +18,7 @@
  			  	int* y =&b;
 					char o;
 
-
+//menu start
  printf("Welcome to the Scientific Calculator! To get started->\n");
   		do {
 		printf("Enter 2 numbers\n");
