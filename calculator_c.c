@@ -1,6 +1,6 @@
    #include<stdio.h>
    #include<math.h>
-
+//functions
  int add(int *d,int *e);
   int sub(int *d,int *e);
    int mult(int *d,int *e);
