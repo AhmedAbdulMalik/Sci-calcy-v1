@@ -11,6 +11,7 @@
 			
 		   int main(void)
   	{
+//variables 
 	 int a=0;
 		 int b=0;
   			int* x =&a;
