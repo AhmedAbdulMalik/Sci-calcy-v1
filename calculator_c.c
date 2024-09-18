@@ -9,7 +9,7 @@
 	 int menu();
 	 
 			
-		   int main(void)
+	 	   int main(void)
   	{
 //variables 
 	 int a=0;
